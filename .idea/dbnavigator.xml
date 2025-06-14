@@ -24,7 +24,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a22b475b-8630-4e5e-85f8-9a10dcd8d139">
-      <console name="ecommerce" type="STANDARD" schema="public" session="Pool" />
+      <console name="ecommerce" type="STANDARD" schema="public" session="Pool"><![CDATA[UPDATE users
+SET is_customer = FALSE
+WHERE id = 1;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -43,6 +45,11 @@
       </filter>
     </filter-actions>
     <filter-actions connection-id="a22b475b-8630-4e5e-85f8-9a10dcd8d139" dataset="public.alembic_version" active-filter-id="" />
+    <filter-actions connection-id="a22b475b-8630-4e5e-85f8-9a10dcd8d139" dataset="public.reviews" active-filter-id="86cba873-7c96-4926-96f1-a8fa160d68b4">
+      <filter id="86cba873-7c96-4926-96f1-a8fa160d68b4" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="is not null" value="" active="true" />
+      </filter>
+    </filter-actions>
     <filter-actions connection-id="a22b475b-8630-4e5e-85f8-9a10dcd8d139" dataset="public.products" active-filter-id="b5b76017-8860-4311-b69f-8ddd849959b2">
       <filter id="b5b76017-8860-4311-b69f-8ddd849959b2" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="is not null" value="" active="true" />
